@@ -14,7 +14,7 @@ class MainPageTest extends BaseTest {
 
         String title = mainPage.getTitle();
         Assertions.assertFalse(title.isEmpty(), "Title is not displayed.");
-        Assertions.assertEquals("Itt megtal·lod, amit keresel!", title, "Title does not equals \"Itt megtal·lod, amit keresel!\".");
+        Assertions.assertEquals("Itt megtal√°lod, amit keresel!", title, "Title does not equals \"Itt megtal√°lod, amit keresel!\".");
     }
 
     @Test
@@ -30,8 +30,8 @@ class MainPageTest extends BaseTest {
             element.click();
             currentUrl = driver.getCurrentUrl();
             visitedUrls.add(currentUrl);
-            Assertions.assertTrue(mainPage.getPageTitle().contains("HardverAprÛ"), "Page title does not contain HardverAprÛ.");
-            Assertions.assertTrue(mainPage.getPageTitle().contains("hirdetÈsek"), "Page title does not contain hirdetÈsek.");
+            Assertions.assertTrue(mainPage.getPageTitle().contains("HardverApr√≥"), "Page title does not contain HardverApr√≥.");
+            Assertions.assertTrue(mainPage.getPageTitle().contains("hirdet√©sek"), "Page title does not contain hirdet√©sek.");
         }
 
         String urlForBackNavigation;

@@ -18,7 +18,7 @@ class LogoutPageTest extends BaseTest {
 
         logoutPage.clickLogoutPopupButton();
         String logoutText = logoutPage.getLogoutText().trim();
-        Assertions.assertEquals("Kilépés", logoutText, "Logout text is wrong.");
+        Assertions.assertEquals("KilÃ©pÃ©s", logoutText, "Logout text is wrong.");
     }
 
     @Test

@@ -22,9 +22,9 @@ class LoginPageTest extends BaseTest {
         String passwordFieldPlaceholder = loginPage.getPasswordFieldPlaceHolder();
         String loginButtonText = loginPage.getLoginButtonText();
 
-        Assertions.assertEquals("Belépési email", loginFieldPlaceholder, "Unexpected login field placeholder.");
-        Assertions.assertEquals("Jelszó", passwordFieldPlaceholder, "Unexpected password field placeholder.");
-        Assertions.assertEquals("Belépés", loginButtonText, "Unexpected login button text.");
+        Assertions.assertEquals("BelÃ©pÃ©si email", loginFieldPlaceholder, "Unexpected login field placeholder.");
+        Assertions.assertEquals("JelszÃ³", passwordFieldPlaceholder, "Unexpected password field placeholder.");
+        Assertions.assertEquals("BelÃ©pÃ©s", loginButtonText, "Unexpected login button text.");
     }
 
     @Test

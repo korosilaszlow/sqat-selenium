@@ -30,7 +30,7 @@ class PCSearchPageTest extends BaseTest {
         pcSearchPage.clickAdvancedSearch();
         pcSearchPage.search("PC", "Budapest", "1000", true);
 
-        Assertions.assertTrue(pcSearchPage.getFoundSearchText().contains("tal·lat erre:"), "Found Search Text should contain \"tal·lat erre:\"");
+        Assertions.assertTrue(pcSearchPage.getFoundSearchText().contains("tal√°lat erre:"), "Found Search Text should contain \"tal√°lat erre:\"");
     }
 
     @Test
@@ -40,6 +40,6 @@ class PCSearchPageTest extends BaseTest {
         pcSearchPage.clickAdvancedSearch();
         pcSearchPage.search("Unreal Technology", "Budapest", "100000000", false);
 
-        Assertions.assertEquals(pcSearchPage.getNotFoundSearchText(), "Hopp·!");
+        Assertions.assertEquals(pcSearchPage.getNotFoundSearchText(), "Hopp√°!");
     }
 }
